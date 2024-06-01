@@ -8,13 +8,9 @@ img{
   margin-right: auto;
 }
 .heading{
-    border-bottom: 3px solid black;
+    
     margin-top:10px;
-    border-radius: 10px;
-}
-.main{
-    border-bottom: 5px double rgb(250, 121, 142);
-    border-radius: 10px;
+
 }
 .p1{
     color: white;
