@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mail Bot</title>
+  </head>
+  <body>
+    <div class="heading">
+      <img src="logo.png" alt="MAIL BOT" />
+    </div>
+    <div class="main">
+      <p class="p1">
+        Forward the email to
+        <a
+          href="mailto:mailbot12e@gmail.com?
+            cc=mailbot12e@gmail.com&
+            mailbot12e@gmail.com
+            &subject=#
+            &body=#"
+          style="text-decoration: none; color: red"
+          >mailbot12e@gmail.com</a
+        >
+      </p>
+      <form action="/scrape_emails" method="post" class="main">
+        <textarea
+          style="border-radius: 10px; padding: 10px"
+          id="email"
+          name="email"
+          rows="10"
+          cols="60"
+          placeholder="mail"
+        ></textarea>
+        <div>
+          <button type="submit">Send Report</button>
+          <button type="button" id="viewReportBtn">View Report</button>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <p>Prevention,Analyze of phishing Email secure</p>
+    </footer>
+  </body>
+  <script type="text/javascript">
+    document.getElementById("viewReportBtn").onclick = function () {
+        location.href = "report.html";
+    };
+</script>
+</html>

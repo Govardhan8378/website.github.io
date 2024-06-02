@@ -1,0 +1,131 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(5, 61, 117);
+}
+
+.container {
+  margin-top: 70px;
+  text-align: center;
+  background: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: black;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.circle {
+  width: 300px;
+  height: 150px;
+  background-color: white;
+  border-top-left-radius: 280px;
+  border-top-right-radius: 280px;
+  border: 80px solid pink;
+  border-bottom: 0;
+  transform-origin: bottom;
+  position: absolute;
+  z-index: 1;
+  transform: rotate(-180deg);
+  rotate: 90deg;
+  bottom: 0;
+  left: -80px;
+}
+
+.circle-out {
+  width: 300px;
+  height: 150px; 
+  background-color: white;
+  border-top-left-radius: 280px;
+  border-top-right-radius: 280px;
+  border: 80px solid #ededed;
+  border-bottom: 0;
+  position: relative;
+}
+
+.text {
+  font-size: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+.preventions {
+  margin-top: 30px;
+  text-align: left;
+  max-width: 600px;
+  margin: 30px auto;
+  font-size: 15px;
+  color: black;
+}
+
+.preventions h2 {
+  color: black;
+}
+
+.preventions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.preventions ul li::before {
+  content: "•";
+  color: black;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.model-outputs {
+  margin-top: 30px;
+  text-align: left;
+  max-width: 600px;
+  margin: 30px auto;
+  color: black;
+}
+
+.model-outputs h2 {
+  color: black;
+}
+
+.model-outputs .output {
+  margin-top: 10px;
+}
+
+.total-score {
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+}
+
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
